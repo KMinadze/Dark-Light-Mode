@@ -1,0 +1,94 @@
+:root {
+    --main-bg: #fdfaea;
+    --main-text: #5c4033;
+    --btn-bg: #5c4033;
+    --btn-text: #fdfaea;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: 0.5s;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+#change_mode {
+  display: none;
+}
+main{
+    background-color: var(--main-bg);
+    color: var(--main-text);
+}
+
+main section{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+section img{
+    height: 80vh;
+}
+
+main section article {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 70px;
+}
+main section article label{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 300px;
+    border-radius: 12px;
+    font-size: 2em;
+    background-color: var(--btn-bg);
+    color: var(--btn-text);
+    cursor: pointer;
+}
+h1{
+    font-size: 5em;
+}
+.wrapper_section p, article p{
+    max-width: 600px;
+    font-size: 2em;
+    line-height: 60px;
+}
+h3{
+    font-size: 3em;
+}
+.branding{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+h4{
+    font-size: 2em;
+    font-style: italic;
+    opacity: 0.8;
+}
+.para{
+    display: flex;
+    gap: 40px;
+}
+.para p{
+    max-width: 300px;
+}
+
+#change_mode:checked ~ main{
+    --main-bg: #5c4033;
+    --main-text: #fdfaea;
+    --btn-bg: #fdfaea;
+    --btn-text: #5c4033;
+}
+
+/* #change_moe ~ */
